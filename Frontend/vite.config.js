@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://aspire-nex-task1-portfoliobackend-hp3o8eumn.vercel.app/',
         secure: false,
       },
     },
