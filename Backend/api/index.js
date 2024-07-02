@@ -30,6 +30,11 @@ app.use(
 // Routes
 app.use("/api/contact", contactRoutes);
 
+app.get("/",(req,res)=>{
+  res.send("<h1>Arpit Jaiswal Portfolio</h1>")
+})
+
+
 // Connect to MongoDB
 connectToDb()
   .then(() => {
@@ -40,3 +45,4 @@ connectToDb()
   .catch((err) => {
     console.log("MONGODB connection failed !!", err);
   });
+
