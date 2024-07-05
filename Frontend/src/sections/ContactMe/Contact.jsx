@@ -22,7 +22,7 @@ function Contact() {
     setSubmitting(true); // Start form submission
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_API_KEY}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
