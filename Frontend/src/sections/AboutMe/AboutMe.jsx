@@ -20,7 +20,7 @@ const AboutMe = () => {
               <p>
                 <strong>Email:</strong> jaiswalarpit419@gmail.com
                 <br />
-                <strong>Phone:</strong> +123 456 7890
+                <strong>Phone:</strong> +91 91310-80629
                 <br />
               </p>
             </div>
