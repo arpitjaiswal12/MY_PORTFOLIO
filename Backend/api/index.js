@@ -20,7 +20,6 @@ app.use(
   cors({
     origin: "*",
     credentials: true,
-    allowedHeaders: "Content-Type, Authorization",
   })
 );
 
@@ -28,6 +27,7 @@ app.use(
 // Middleware
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended : false}));
+app.use(express.json());
 
 // Routes
 app.use("/api/contact", contactRoutes);
