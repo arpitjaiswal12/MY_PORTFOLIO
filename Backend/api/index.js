@@ -15,9 +15,6 @@ const contactRoutes = require("../src/router/contactRoutes.js");
 
 const app = express();
 
-// Middleware
-app.use(bodyParser.json());
-
 // CORS configuration
 app.use(
   cors({
@@ -26,6 +23,11 @@ app.use(
     allowedHeaders: "Content-Type, Authorization",
   })
 );
+
+
+// Middleware
+app.use(bodyParser.json());
+app.use(express.urlencoded({extended : false}));
 
 // Routes
 app.use("/api/contact", contactRoutes);
