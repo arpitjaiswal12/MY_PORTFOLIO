@@ -7,8 +7,8 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
   const desc = {
     EduNetAIDesc:
       "Led a team of 4 to design DB schemas and UML diagrams. Developed AI-assisted course creation and chatbots with 100MB vector storage. Implemented discussion forums, quiz tests, and personalized profiles. Enabled query resolution through professors and AI chatbots. Conducted extensive testing to boost user experience by 60%.",
-    EduNetAIGithub: "https://github.com/DevanshSahni/tindog",
-    EduNetAIWebsite: "https://devanshsahni.github.io/tindog/",
+    EduNetAIGithub: "https://github.com/arpitjaiswal12/Minor_EduNetAI",
+    // EduNetAIWebsite: "",
 
     Youtube_TwitterBackendDesc:
       "Implement JWT, Cloudinary (25GB Managed Storage), and Multer for secure file uploads. Utilize advanced MongoDB Aggregation pipeline for detailed CRUD operations and subscriber/channel analysis. Design a well-structured project with response and error-handling utilities.",

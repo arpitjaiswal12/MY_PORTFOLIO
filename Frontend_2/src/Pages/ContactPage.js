@@ -1,41 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import './App.css'; // Assuming your CSS file is named App.css
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
+
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
+    console.log(formData);
+    setLoading(true);
+    setSubmitted(false);
     try {
-      const response = await fetch('https://aspire-nex-task1-portfoliobackend-pw1qolzqp.vercel.app/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://aspire-nex-task1-portfoliobackend-pw1qolzqp.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       if (response.ok) {
-        alert('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
+        setLoading(false);
+        setSubmitted(true);
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
       } else {
-        alert('Failed to send message. Please try again.');
+        setLoading(false);
+        alert("Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again.');
+      setLoading(false);
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
     }
   };
 
@@ -76,7 +88,13 @@ const ContactPage = () => {
               required
             />
           </label>
-          <button type="submit" className="ContactButton">Submit</button>
+          <button
+            type="submit"
+            className="ContactButton"
+            disabled={loading || submitted}
+          >
+            {loading ? "Submitting..." : submitted ? "Submitted" : "Submit"}
+          </button>
         </form>
       </div>
     </div>
