@@ -164,6 +164,14 @@ b{
     transition: 0.5s;
   }
 
+  .NavbarLinks a{
+    color: #01111a;
+    
+  }
+  .NavbarLinks a:hover{
+    color: #ffffff;
+  }
+
   .showNavbar{
     transform: translateX(0);    
   }
@@ -566,7 +574,7 @@ footer h4{
   border: 1px solid #f4d01c;
   border-radius: 5px;
   background-color: #031926;
-  color: #01111a;
+  color:#E7E7E7;
   font-size: 16px;
 }
 
