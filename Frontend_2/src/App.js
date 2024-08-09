@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Nav from './Components/Navbar';
-import Footer from "./Components/Footer";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Project from "./Components/Projects";
-import MoveToTop from "./Components/MoveToTop";
+import Nav from './Components/Navbar.js';
+import Footer from "./Components/Footer.js";
+import Home from "./Pages/Home.js";
+import About from "./Pages/About.js";
+import Resume from "./Pages/Resume.js";
+import Project from "./Pages/Projects.js";
+import MoveToTop from "./Components/MoveToTop.js";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
-import ContactPage from "./Components/ContactPage";
+import ContactPage from "./Pages/ContactPage.js";
 
 
 function App() {

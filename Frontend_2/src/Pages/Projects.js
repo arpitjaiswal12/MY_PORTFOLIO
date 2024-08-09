@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectBox from './ProjectBox';
+import ProjectBox from '../Components/ProjectBox.js';
 import BookBazaar from '../images/bookBazaar.png';
 import Youtube_Twitter from '../images/Youtube_Twitter.png';
 import EduNetAI from '../images/EduNetAI.png';
