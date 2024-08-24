@@ -5,9 +5,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { Link } from 'react-router-dom';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-
-
 
 const Resume = () => {
   const[wid, setwid]=useState(window.innerWidth);
