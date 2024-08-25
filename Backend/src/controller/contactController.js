@@ -11,14 +11,29 @@ exports.createContact = async (req, res) => {
     }
 
     const newContact = await Contact.create({
-        email,
-        name,
-        message
-    })
+      email,
+      name,
+      message,
+    });
 
     return res.status(201).json({
       success: true,
       data: newContact,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      error: "Server Error",
+    });
+  }
+};
+
+exports.getContacts = async (req, res) => {
+  try {
+    const contacts = await Contact.find();
+    res.status(200).json({
+      success: true,
+      data: contacts,
     });
   } catch (error) {
     return res.status(500).json({

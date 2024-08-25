@@ -15,13 +15,10 @@ const contactRoutes = require("../src/router/contactRoutes.js");
 
 const app = express();
 
-<<<<<<< HEAD
 // Middleware
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended : false}))
 
-=======
->>>>>>> c3f53196262ad8fdf36e3dd3aa8246ec2bdcc178
 // CORS configuration
 app.use(
   cors({
