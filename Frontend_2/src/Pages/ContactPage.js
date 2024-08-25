@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import './App.css'; // Assuming your CSS file is named App.css
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import the CSS for styling
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,6 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
     setLoading(true);
     setSubmitted(false);
     try {
@@ -38,16 +38,16 @@ const ContactPage = () => {
       if (response.ok) {
         setLoading(false);
         setSubmitted(true);
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
         setLoading(false);
-        alert("Failed to send message. Please try again.");
+        toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
       setLoading(false);
       console.error("Error:", error);
-      alert("An error occurred. Please try again.");
+      toast.error("An error occurred. Please try again.");
     }
   };
 
@@ -97,6 +97,17 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 };
