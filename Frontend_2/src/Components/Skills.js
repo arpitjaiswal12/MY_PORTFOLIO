@@ -2,11 +2,14 @@ import React from "react";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   FaReact,
+  FaSwift,
   FaGitAlt,
   FaGithub,
   FaNpm,
   FaBootstrap,
   FaHtml5,
+  FaUikit,
+
 } from "react-icons/fa";
 import { DiNodejs, DiJavascript1 } from "react-icons/di";
 import {
@@ -21,6 +24,8 @@ import {
 const Skills = ({ skill }) => {
   const icon = {
     "C++": <CgCPlusPlus />,
+    Swift: <FaSwift />,
+    UIKit: <FaUikit />,
     Postman: <SiPostman />,
     React: <FaReact />,
     Javascript: <DiJavascript1 />,
