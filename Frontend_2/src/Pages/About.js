@@ -13,19 +13,21 @@ const About = () => {
             Get to <b>know</b> me!
           </h1>
           <p>
-            Hi, my name is <b>Arpit Jaiswal</b> and I am from Indore, Madhya
-            Pradesh. I'm a <b>MERN stack web developer</b> and a final year
-            college student pursuing <b>BTech in CSE</b>. <br />
-            <br />I have done several impactful projects like <b>
-              BookBazaar{" "}
-            </b>{" "}
-            and <b>EduNetAI</b>. I love to create projects with beautiful
-            designs with interesting backend, and you can check out some of my
-            work in the projects section.
+            Hi, my name is <b>Arpit Jaiswal</b>, and I'm from <b>Indore, Madhya Pradesh</b>.
+            I'm an <b>iOS Developer Intern</b> at <b>DigiValet</b> and a final-year <b> BTech CSE </b>
+            student passionate about building scalable and impactful
+            applications.
             <br />
-            <br />I am <b>open</b> to new collaborations or work where I can
-            contribute and grow. Feel free to connect with me, links are in the
-            footer.
+            <br />
+            I specialize in <b>MERN stack, iOS development (Swift, SwiftUI, UIKit),
+            and backend engineering.</b> My projects, such as Arogya and
+            CitiesSearch, showcase my ability to create seamless user
+            experiences and efficient backend architectures.
+            <br />
+            <br />
+            I love crafting <b>intuitive designs</b> with robust backends and
+            continuously seek opportunities to <b>learn, collaborate, and innovate. </b>
+            Feel free to connect with me—links are in the footer! 🚀
             <br />
           </p>
         </div>
@@ -45,6 +47,8 @@ const About = () => {
       <div className="skills">
         <Skills skill="Javascript" />
         <Skills skill="C++" />
+        <Skills skill="Swift" />
+        <Skills skill="UIKit" />
         <Skills skill="Node" />
         <Skills skill="Express" />
         <Skills skill="HTML5" />
