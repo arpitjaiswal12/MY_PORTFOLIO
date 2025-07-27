@@ -13,10 +13,11 @@ const About = () => {
             Get to <b>know</b> me!
           </h1>
           <p>
-            Hi, my name is <b>Arpit Jaiswal</b>, and I'm from <b>Indore, Madhya Pradesh</b>.
-            I'm an <b>iOS Developer Intern</b> at <b>DigiValet</b> and a final-year <b> BTech CSE </b>
-            student passionate about building scalable and impactful
-            applications.
+            {/* Hi, my name is <b>Arpit Jaiswal</b>, and I'm from <b>Indore, Madhya Pradesh</b>.
+            I'm an <b>iOS Developer Intern</b> at <b>DigiValet</b> and a graduate <b> BTech CSE(Hons) </b>
+            student with good academic track record of 8.72 cgpa, passionate about building scalable and impactful
+            applications. */}
+            Hi, my name is <b>Arpit Jaiswal</b>, and I'm from <b>Indore, Madhya Pradesh</b>. I'm an <b> iOS Developer Intern </b> at <b> DigiValet </b> and a graduate <b> B.Tech CSE(Hons) </b> student with a good academic track record of <b> 8.72 CGPA</b>, passionate about building scalable and impactful applications.
             <br />
             <br />
             I specialize in <b>MERN stack, iOS development (Swift, SwiftUI, UIKit),

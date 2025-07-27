@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 
 const ProjectBox = ({ projectPhoto, projectName }) => {
   const desc = {
+    ArogyaDesc: "Arogya is a MERN stack-based platform addressing healthcare gaps in India's underserved communities. It integrates Ayurvedic and modern medicine, offering real-time video consultations via WebRTC, AI chatbots, and doctor collaboration, along with PhonePe Payment gateway integration.",
+    ArogyaGithub:"https://github.com/arpitjaiswal12/Arogya-A-Healthcare-Platform",
+    ArogyaWebsite: "https://arogya-nine.vercel.app/",
+
     EduNetAIDesc:
       "Led a team of 4 to design DB schemas and UML diagrams. Developed AI-assisted course creation and chatbots with 100MB vector storage. Implemented discussion forums, quiz tests, and personalized profiles. Enabled query resolution through professors and AI chatbots. Conducted extensive testing to boost user experience by 60%.",
     EduNetAIGithub: "https://github.com/arpitjaiswal12/Minor_EduNetAI",
@@ -54,7 +58,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
 
         <Link to={desc[projectName + "Website"]} target="_blank">
           <button className="projectbtn">
-            <CgFileDocument /> Demo
+            <CgFileDocument /> Explore It...
           </button>
         </Link>
       </div>
